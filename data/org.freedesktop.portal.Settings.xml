@@ -94,7 +94,7 @@
     -->
     <method name="Read">
       <annotation name="org.freedesktop.DBus.Deprecated" value="true"/>
-      <arg type="s" name="namespace"/>
+      <arg type="s" name="namespace_"/>
       <arg type="s" name="key"/>
       <arg type="v" name="value" direction="out"/>
     </method>
@@ -110,7 +110,7 @@
       This method was added in version 2.
     -->
     <method name="ReadOne">
-      <arg type="s" name="namespace" direction="in"/>
+      <arg type="s" name="namespace_" direction="in"/>
       <arg type="s" name="key" direction="in"/>
       <arg type="v" name="value" direction="out"/>
     </method>
@@ -124,7 +124,7 @@
       Emitted when a setting changes.
     -->
     <signal name="SettingChanged">
-      <arg type="s" name="namespace" direction="out"/>
+      <arg type="s" name="namespace_" direction="out"/>
       <arg type="s" name="key" direction="out"/>
       <arg type="v" name="value" direction="out"/>
     </signal>
